@@ -1,0 +1,46 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.toolbar{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.toolbar__item{
+  margin-left: 8px;
+  padding: 20px;
+  border: 2px solid black;
+  color: gray;
+}
+
+.toolbar__item__avtive{
+  margin-left: 8px;
+  padding: 20px;
+  border: 2px solid black;
+  background-color: gray;
+  color: antiquewhite;
+}
+
+
+
