@@ -28,16 +28,21 @@
 }
 
 .toolbar__item{
-  margin-left: 8px;
+  margin: 10px;
   padding: 20px;
-  border: 2px solid black;
+  border: 3px solid darkgray;
   color: gray;
 }
 
-.toolbar__item__avtive{
-  margin-left: 8px;
+.toolbar__item:hover{
+  border-color: gray;
+  transform: scale(1.1);
+}
+
+.active{
+  margin: 8px;
   padding: 20px;
-  border: 2px solid black;
+  border: 3px solid gray;
   background-color: gray;
   color: antiquewhite;
 }
