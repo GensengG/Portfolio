@@ -27,9 +27,19 @@ export const Toolbar = (chooseCategory) => {
     }
 
     return (
-        <div className="toolbar">
+        <div className="toolbar" id="toolbar">
             {state.filter.map(item => (
-                <div key={item.key} className="toolbar__item" onClick={() => chooseFunk(item.name)}>{item.name}</div>
+                <div key={item.key} className="toolbar__item" 
+                    onClick={(e) => {
+                        chooseFunk(item.name); 
+                        let parent = document.getElementById("toolbar");
+                        let btns = Array.from(parent.querySelectorAll("div"));
+                        btns.forEach(btn => {
+                            btn.className = "toolbar__item";
+                        });
+                        e.target.className = "active";
+                    }
+                }>{item.name}</div>
             ))}
         </div>
     );
