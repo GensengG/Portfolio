@@ -8,7 +8,8 @@ export const Portfolio = (stateSwitch) => {
 
     return(
         <div className="portfolio">
-            itemsArr.currentItems.map(element => (
+            {
+            itemsArr.map(element => (
                 <PortfolioItem key={element.id} el={element}/>
             ))}
         </div>
