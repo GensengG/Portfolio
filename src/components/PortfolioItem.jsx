@@ -1,14 +1,11 @@
 import "../App.jsx";
-import { PortfolioItem } from "./PortfolioItem.jsx";
 
-export const Portfolio = (stateSwitch) => {
-    const {itemsArr} = stateSwitch;
+export const PortfolioItem = (element) => {
+    const {el} = element;
+
     return(
-        <div className="portfolio">
-            {
-            itemsArr.map(element => (
-                <PortfolioItem key={element.id} el={element}/>
-            ))}
-        </div>
+        <div className="portfolio-item">
+            <img src={el.img} className="item"/>
+        </div> 
     )
 }
