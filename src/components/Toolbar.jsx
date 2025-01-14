@@ -2,9 +2,7 @@ import { useState } from "react";
 import "../App.jsx";
 
 export const Toolbar = (chooseCategory) => {
-
     const {chooseFunk} = chooseCategory;
-
     const state = {
         filter: [
             {
@@ -43,5 +41,4 @@ export const Toolbar = (chooseCategory) => {
             ))}
         </div>
     );
-
 };
