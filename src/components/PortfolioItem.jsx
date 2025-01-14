@@ -1,14 +1,14 @@
-import { useState } from "react";
-import { Toolbar } from "./Toolbar.jsx";
 import "../App.jsx";
-import { Portfolio } from "./Portfolio.jsx";
+import { PortfolioItem } from "./PortfolioItem.jsx";
 
-export const PortfolioItem = (element) => {
-    const {el} = element;
-
+export const Portfolio = (stateSwitch) => {
+    const {itemsArr} = stateSwitch;
     return(
-        <div className="portfolio-item">
-            <img src={el.img} className="item"/>
-        </div> 
+        <div className="portfolio">
+            {
+            itemsArr.map(element => (
+                <PortfolioItem key={element.id} el={element}/>
+            ))}
+        </div>
     )
 }
