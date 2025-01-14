@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { Toolbar } from "./Toolbar.jsx";
 import "../App.jsx";
 import { PortfolioItem } from "./PortfolioItem.jsx";
 
